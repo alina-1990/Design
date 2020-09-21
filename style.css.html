@@ -1,0 +1,239 @@
+
+.text {
+    margin-right: -250px;
+    position: absolute;
+    z-index: 1;
+}
+
+.text-transform {
+    margin: 0rem;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 11px;
+    z-index: 1;
+    transform: rotate(0deg);
+    text-orientation: sideways;
+    text-align: center;
+    text-orientation: sideways;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    -webkit-transform: rotate(0deg);
+}
+
+.card {
+    border: none;
+}
+
+.border-btm {
+    border-bottom: 5px solid blue;
+}
+
+.lines:after {
+    position: absolute;
+    top: 18px;
+    left: 104px;
+    right: 0px;
+    content: '';
+    width: 71%;
+    height: 1px;
+    background: #c0b5be5c;
+    z-index: 0;
+}
+
+.lines-two:after {
+    position: absolute;
+    top: 37px;
+    left: 109px;
+    right: 0px;
+    content: '';
+    width: 67%;
+    height: 1px;
+    background: #c0b5be5c;
+    z-index: 0;
+}
+
+.lines-three:after {
+    position: absolute;
+    top: 30px;
+    left: 171px;
+    right: 0px;
+    content: '';
+    width: 17%;
+    height: 1px;
+    background: #c0b5be5c;
+    z-index: 0;
+}
+
+.d-block:hover {
+    color: blue;
+    background: #16c0db2e;
+    border: 1px solid blue;
+}
+
+#img-overlay {
+    position: relative;
+    z-index: 0;
+}
+
+#img-overlay :after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    opacity: .8;
+    background: #0066ff47;
+}
+
+.arrow:before {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    content: '';
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #e1e8ff;
+}
+
+.line:after {
+    position: absolute;
+    top: 50px;
+    left: 182px;
+    right: 0px;
+    content: '';
+    width: 45%;
+    height: 1px;
+    background: #c0b5be5c;
+    z-index: 0;
+}
+
+.one-line:after {
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: '';
+    width: 3px;
+    height: 30px;
+    background: #0033c7;
+}
+
+.icon-quote-left:before {
+    content: "\275C \275C";
+    color: #0033c7;
+    position: absolute;
+    top: 34%;
+    left: 29%;
+}
+
+.nav-link:before {
+    content: "\21FE";
+    color: white;
+}
+
+.grey {
+    background: #e7e6e645;
+}
+
+.box {
+    border: 1px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box .box-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    transition: all 0.50s ease 0s;
+}
+
+.box .title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    position: relative;
+    transform: rotate(180deg);
+    transform-origin: right top 0;
+    transition: all .3s ease-in-out 0.2s;
+}
+
+.box .post {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    transform: rotate(180deg);
+    transform-origin: right top 0;
+    transition: all .3s ease-in-out 0.4s;
+}
+
+.box .description {
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    transform: rotate(180deg);
+    transform-origin: right top 0;
+    transition: all .3s ease-in-out 0.6s;
+}
+
+.box .read {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    transform-origin: right top 0;
+    transition: all 0.3s ease-in-out 0.8s;
+}
+
+.box .read:hover {
+    color: #e8802e;
+    text-decoration: none;
+}
+
+.box:hover .box-content,
+.box:hover .title,
+.box:hover .post,
+.box:hover .description,
+.box:hover .read {
+    transform: rotate(0deg);
+}
+
+@media screen and (max-width: 990px) {
+    .box {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .box .box-content {
+        padding: 10% 20px;
+    }
+}
